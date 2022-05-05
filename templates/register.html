@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register ✨ </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="--registerbox">
+        <div>
+            <h1>Register ✨</h1>
+            <form action="" method = "POST">
+                <p>Username </p> <input type = "text" name = "username" id = "input" />
+                <p>Password </p> <input type = "password" name = "password" id = "input"  />
+                <br>
+                <input type = "submit" value = "Submit" id="submit-button" />
+                <h3>Already Have an Account?</h3><br>
+                <h3><a href ="{{url_for('login')}}">Login Here</a></h3>
+            </form>
+        </div>   
+    </div>
+</body>
+</html>
